@@ -8,7 +8,9 @@ import java.lang.annotation.Target;
 import cn.migu.hasika.database.DatabaseColumnInfo;
 
 /**
- * Created by hasika on 2018/3/14.
+ * Author: hasika
+ * Time: 2018/3/4
+ * Any questions can send email to lbhasika@gmail.com
  */
 
 @Target(ElementType.FIELD)

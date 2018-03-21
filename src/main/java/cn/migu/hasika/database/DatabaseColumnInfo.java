@@ -3,7 +3,9 @@ package cn.migu.hasika.database;
 import cn.migu.hasika.database.annotation.DatabaseField;
 
 /**
- * Created by hasika on 2018/3/15.
+ * Author: hasika
+ * Time: 2018/3/15
+ * Any questions can send email to lbhasika@gmail.com
  */
 
 public final class DatabaseColumnInfo {

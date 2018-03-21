@@ -17,11 +17,13 @@ import cn.migu.hasika.database.annotation.DatabaseTable;
 import cn.migu.hasika.database.util.SerializableUtil;
 
 /**
- * Created by hasika on 2018/3/13.
- * <p>
  * do not use id field which is used by {@link DatabaseEntry} for primary key
- * <p>
- * field type support Text, Serializable {@link DatabaseColumnInfo.ColumnTypeConstant}
+ * field type {@link DatabaseColumnInfo.ColumnTypeConstant}
+ * example please {@link cn.migu.hasika.database.example.ExampleEntry}
+ *
+ * Author: hasika
+ * Time: 2018/3/21
+ * Any questions can send email to lbhasika@gmail.com
  */
 
 public class DatabaseEntry {
