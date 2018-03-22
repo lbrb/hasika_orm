@@ -14,6 +14,7 @@ import java.io.File;
  */
 
 public class DatabaseManager {
+    private static final String TAG = DatabaseManager.class.getCanonicalName();
     private static DatabaseManager instance;
 
     private DatabaseHelper dbHelper;
@@ -22,13 +23,15 @@ public class DatabaseManager {
         if (instance == null){
             String dbPath = "migu_download_sqlite.db";
             if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())){
-
                 String sdDirPath = Environment.getExternalStorageDirectory().getAbsolutePath()+ File.separator;
                 File dir = new File(sdDirPath);
                 if (!dir.exists()){
                     dir.mkdirs();
                 }
-                dbPath = sdDirPath+ File.separator+"cmgame"+ File.separator+"plugin"+ File.separator+dbPath;
+                
+                if (dir.canWrite()) {
+                    dbPath = sdDirPath+ File.separator+"cmgame"+ File.separator+"plugin"+ File.separator+dbPath;
+                }
             }
 
             instance = new DatabaseManager(context, dbPath);
