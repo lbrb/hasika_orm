@@ -28,7 +28,7 @@ public class DatabaseManager {
                 if (!dir.exists()){
                     dir.mkdirs();
                 }
-                dbPath = sdDirPath+File.separator+"cmgame"+ File.separator+"plugin"+File.separator+dbPath;
+                dbPath = sdDirPath+ File.separator+"cmgame"+ File.separator+"plugin"+ File.separator+dbPath;
             }
 
             instance = new DatabaseManager(context, dbPath);
